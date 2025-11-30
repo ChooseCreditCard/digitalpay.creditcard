@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>DigitalPay.Creditcard – Digital Payments & Modern Card Flows Explained</title>
-  <meta name="description" content="How digital payment flows work with credit cards: tokenization, digital wallets, background billing, virtual cards and card-on-file subscription models." />
+  <title>DigitalPay.Creditcard – How Digital Card Payments Work</title>
+  <meta name="description" content="Understand how digital card payments work: tap-to-pay, mobile wallets, tokenization, card-on-file and security layers. Independent overview of modern payment technology." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://digitalpay.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DigitalPay.Creditcard – Digital Payment Flows & Card Processing Explained" />
-  <meta property="og:description" content="Neutral overview of how credit-card rails support online wallets, card-on-file billing, virtual cards and digital checkout experiences." />
+  <meta property="og:title" content="DigitalPay.Creditcard – Digital Card Payments Explained" />
+  <meta property="og:description" content="Independent explanation of digital card payments: wallets, tap-to-pay, tokenization, card-on-file and security – in plain language." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://digitalpay.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DigitalPay.Creditcard – Digital Payment Flows Explained" />
-  <meta name="twitter:description" content="Understand how digital-first payment features like virtual cards, wallets and card-on-file billing rely on traditional credit-card rails." />
+  <meta name="twitter:title" content="DigitalPay.Creditcard – Digital Card Payments Explained" />
+  <meta name="twitter:description" content="Learn how digital card payments route through wallets, networks and security layers – before you compare real products." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -31,10 +31,10 @@
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind -->
+  <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Shared CSS -->
+  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-slate-950 text-slate-100">
@@ -44,12 +44,13 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">DigitalPay.Creditcard</div>
-          <div class="brand-subtitle">Digital Payment Flows & Modern Card Rails</div>
+          <div class="brand-subtitle">Digital Card Payments Explained</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#overview">Overview</a>
-        <a href="#mechanics">How It Works</a>
+        <a href="#flow">Payment Flow</a>
+        <a href="#security">Security</a>
         <a href="#compare">Compare</a>
       </nav>
     </div>
@@ -66,50 +67,91 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Behind the Scenes of Digital Payments on Credit Cards</h1>
+        <h1>How Digital Card Payments Actually Work</h1>
         <p class="hero-lead">
-          Many “buy now, pay later”, in-app purchases or wallet-based payments rely on traditional credit-card rails under the hood. This page breaks down how tokenization, virtual cards, subscription billing and digital-first payment flows work — and what it means for security and flexibility.  
+          “Tap your card”, “pay with your phone” or “save card for later” sound simple. This page breaks down what really happens in a digital card payment – from wallets and tokens to networks, merchants and security layers.
         </p>
-        <a class="cta" href="https://choose.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Compare digital-ready cards  
+        <a class="cta" href="https://choose.creditcard/technology/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the Technology hub at Choose.Creditcard
         </a>
       </div>
     </section>
 
-    <!-- Content sections -->
+    <!-- Overview -->
     <section id="overview" class="section">
-      <h2>What Is DigitalPay in the Context of Cards?</h2>
-      <p>DigitalPay refers to payment flows that never see a physical card — where wallets, apps or merchants use virtual card numbers, tokens or stored-card data to process transactions. These flows work on top of existing credit-card networks but offer smoother online or mobile checkout experiences.</p>
-      <p>Examples include one-click checkout, subscription billing (card-on-file), digital wallets, in-app purchases and virtual cards issued instantly via apps. The user experience is optimized for speed and convenience while still relying on standard authorization and settlement rails.</p>
+      <h2>What Do We Mean by “Digital Card Payments”?</h2>
+      <p>
+        Digital card payments cover everything that happens when you use a card number without physically inserting plastic into a terminal. That includes mobile wallets, tap-to-pay with NFC, in-app payments, saved cards in online accounts and recurring subscriptions.
+      </p>
+      <p>
+        Even though it feels like “just an app”, most of these payments still run on traditional card networks such as Visa, Mastercard or American Express. The main difference is the <strong>presentation</strong> of your card (phone, watch, browser) and the <strong>security model</strong> (tokens instead of full card numbers).
+      </p>
     </section>
 
-    <section id="mechanics" class="section">
-      <h2>How a DigitalPay Transaction Flows End-to-End</h2>
-      <p>When you pay online or in-app, your wallet or the merchant’s payment gateway sends a tokenized card number or encrypted card-on-file identifier. The request travels through a payment gateway and acquirer, reaches the card network, and then your issuer authorizes, clears and settles the transaction like a normal card payment.</p>
-      <p>Throughout the process, tokenization and encryption protect your real card credentials. Virtual cards or tokens can be rotated, revoked or limited, reducing the risk of fraud if a merchant or service is compromised.</p>
+    <!-- Payment Flow -->
+    <section id="flow" class="section">
+      <h2>From Tap to Settlement – The Digital Payment Flow</h2>
+      <p>
+        When you tap a phone or card on a contactless reader, the terminal sends an authorization request through the payment network, just as with a chip-and-PIN purchase. The key difference is that digital wallets often use a
+        <strong>device-specific token</strong> instead of your raw 16-digit card number.
+      </p>
+      <p>
+        Behind the scenes, the steps generally look like this:
+      </p>
+      <ul>
+        <li><strong>1. Device authentication</strong> – You unlock the device with biometrics or a passcode.</li>
+        <li><strong>2. Tokenized card details</strong> – The wallet uses a payment token representing your card, not the actual PAN.</li>
+        <li><strong>3. Authorization request</strong> – The terminal submits an encrypted request via the acquirer to the card network.</li>
+        <li><strong>4. Issuer decision</strong> – The bank or card issuer checks balance, risk indicators and device data before approving or declining.</li>
+        <li><strong>5. Clearing &amp; settlement</strong> – The transaction is batched and settled between banks in the background, often a day or two later.</li>
+      </ul>
+      <p>
+        For card-on-file and subscription payments, steps 3–5 repeat on a schedule using stored credentials, sometimes with different rules for low-value or recurring transactions.
+      </p>
     </section>
 
+    <!-- Security & Tokenization -->
+    <section id="security" class="section">
+      <h2>Security, Tokenization and Card-on-File</h2>
+      <p>
+        Digital payments rely heavily on <strong>tokenization</strong>. Instead of sending your real card number, the issuer or network generates a surrogate token that can only be used in limited contexts – for example on one device, with one merchant or within one wallet.
+      </p>
+      <p>
+        Key security layers typically include:
+      </p>
+      <ul>
+        <li><strong>Device security</strong> – Biometrics, secure elements and OS-level protections on phones and wearables.</li>
+        <li><strong>Network tokenization</strong> – Tokens issued by card networks that map back to your real card only inside secure infrastructure.</li>
+        <li><strong>Merchant controls</strong> – Limits on which merchants can charge a stored token and under which conditions (amount, frequency, currency).</li>
+        <li><strong>Risk engines</strong> – Issuer fraud systems that evaluate location, device behaviour and transaction history in real time.</li>
+      </ul>
+      <p>
+        For you as a cardholder, this typically means <strong>lower risk of card detail theft</strong> compared with repeatedly typing your full number into websites or leaving a physical card imprint with many merchants.
+      </p>
+    </section>
+
+    <!-- Fees & Acceptance -->
     <section class="section">
-      <h2>Virtual Cards, Tokens and Card-on-File Billing</h2>
-      <p>Virtual cards are card numbers created digitally inside an app. They can be used immediately for online or in-app purchases, often before the plastic arrives — or even without a plastic card ever being issued.</p>
-      <p>Card-on-file billing lets subscriptions, recurring charges or merchant-initiated payments occur without re-entering details each time. The merchant retains a token, not the real card number, enhancing security while enabling automated billing.</p>
-    </section>
-
-    <section class="section">
-      <h2>Security, Fraud Controls and Tokenisation Benefits</p>
-      <p>Because transactions use tokens instead of the actual card number, merchants don’t store reusable sensitive data. If a merchant’s database is compromised, the leak affects only tokens, which can be revoked without replacing the underlying card.</p>
-      <p>Issuers and wallets can also enforce controls: per-merchant limits, one-time virtual cards, real-time spend alerts and instant card freezes — features that are harder to retrofit with legacy plastic-card systems.</p>
-    </section>
-
-    <section class="section">
-      <h2>Considerations: Flexibility, Recurring Fees & Merchant Risk</p>
-      <p>While digital payments are convenient, they rely on merchant compliance: tokens must be stored securely, billed properly and renewed when cards are reissued. Issues such as failed token updates can lead to declined payments or subscription interruptions.</p>
-      <p>Also, some merchants may charge different fees when processing tokens or offer less favourable FX or billing terms. It pays to monitor your digital-card usage and treat virtual cards carefully — just like physical ones.</p>
+      <h2>Fees, Acceptance and Where Digital Payments Work Best</h2>
+      <p>
+        From the cardholder’s perspective, fees for digital payments are usually the same as for physical card usage: any FX margins, cash-advance rules, surcharges and interest come from the <strong>card product</strong>, not the technology channel.
+      </p>
+      <p>
+        Acceptance, however, can vary:
+      </p>
+      <ul>
+        <li>Some countries or merchants still require chip-and-PIN for higher amounts.</li>
+        <li>Transit systems may support tap-to-pay but not all wallet brands.</li>
+        <li>Online subscriptions might only accept certain networks or wallet integrations.</li>
+      </ul>
+      <p>
+        When comparing cards in a digital-first world, you should still pay attention to <strong>FX fees, ATM rules, cash-advance definitions and interest</strong> – even if you plan to “never touch plastic” again.
+      </p>
     </section>
 
     <!-- Comparison block -->
     <section id="compare" class="section">
-      <h2>Compare DigitalPay Capabilities Across Cards</h2>
+      <h2>Compare Digital-First Card Features</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
@@ -121,106 +163,111 @@
           </thead>
           <tbody>
             <tr>
-              <td>Native Virtual Card Support</td>
-              <td>Cards that offer instant virtual issuance via app</td>
-              <td>Lets you start spending online immediately, without waiting for plastic.</td>
+              <td>Wallet support</td>
+              <td>Apple Pay, Google Pay, Samsung Pay, wearables</td>
+              <td>Determines how easily you can use the card across devices.</td>
             </tr>
             <tr>
-              <td>Tokenization & Vault Services</td>
-              <td>Support for network or wallet tokens, update-on-reissue</td>
-              <td>Makes recurring billing and subscription payments more reliable.</td>
+              <td>Tokenization &amp; controls</td>
+              <td>Ability to freeze cards, manage tokens, remove devices</td>
+              <td>Gives direct control if a device is lost or a merchant is compromised.</td>
             </tr>
             <tr>
-              <td>Wallet & Device Integration</td>
-              <td>Compatibility with major wallets — Apple Pay, Google Pay, etc.</td>
-              <td>Provides seamless tap and in-app payment across your devices.</td>
+              <td>FX &amp; cross-border use</td>
+              <td>Transparent FX fees and clear rules on foreign digital payments</td>
+              <td>Important if you travel and pay with your phone abroad.</td>
             </tr>
             <tr>
-              <td>Security & Control Features</td>
-              <td>Instant freeze, per-merchant locks, spend alerts, token revocation</td>
-              <td>Minimizes fraud risk and gives you control over digital usage.</td>
+              <td>Card-on-file management</td>
+              <td>Dashboards showing subscriptions, trial periods and merchants</td>
+              <td>Helps avoid forgotten charges and manage recurring spending.</td>
             </tr>
             <tr>
-              <td>Recurring Payment Handling</td>
-              <td>Clear token-update process, expiry notifications, subscription tracking</td>
-              <td>Ensures subscriptions and autopay setups don’t break unexpectedly.</td>
+              <td>Security notifications</td>
+              <td>Real-time alerts, push notifications, clear dispute flows</td>
+              <td>Makes it easier to spot and respond to suspicious activity.</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="small">
-        For live product-by-product comparisons, visit
-        <a href="https://choose.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          Choose.Creditcard
+        For future product-by-product comparisons, visit
+        <a href="https://choose.creditcard/technology/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          the Technology hub on Choose.Creditcard
         </a>.
       </p>
     </section>
 
-    <!-- Related links -->
+    <!-- Cluster links -->
     <section class="section">
-      <h2>Explore Related Card & Payment Concepts</h2>
+      <h2>Explore Related Payment Technologies</h2>
       <div class="cluster-grid">
         <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
           <h3>VirtualPay.Creditcard</h3>
-          <p>Details on virtual-card issuance and online-first payment flows.</p>
+          <p>How virtual cards work for subscriptions, trials and online security.</p>
         </a>
-        <a class="cluster-card" href="https://tap.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_tap">
-          <h3>Tap.Creditcard</h3>
-          <p>How tap-to-pay still fits into the broader card ecosystem.</p>
+        <a class="cluster-card" href="https://tappay.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_tappay">
+          <h3>TapPay.Creditcard</h3>
+          <p>Contactless tap-to-pay, limits, offline transactions and risk controls.</p>
         </a>
         <a class="cluster-card" href="https://nfc.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
           <h3>NFC.Creditcard</h3>
-          <p>The radio layer behind contactless payments.</p>
+          <p>The technology behind contactless cards, phones and wearables.</p>
         </a>
-        <a class="cluster-card" href="https://technology.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_tech">
-          <h3>Tech.Creditcard</h3>
-          <p>Broader look at how modern card technology evolves.</p>
+        <a class="cluster-card" href="https://wallets.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_wallets">
+          <h3>Wallets.Creditcard</h3>
+          <p>Card aggregation, device wallets and how different ecosystems compete.</p>
         </a>
-        <a class="cluster-card" href="https://compare.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_compare">
-          <h3>Compare.Creditcard</h3>
-          <p>Side-by-side comparisons of cards with digital payment features.</p>
+        <a class="cluster-card" href="https://access.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=cluster_access">
+          <h3>Access.Creditcard</h3>
+          <p>Access control, SCA and authentication layers in modern card payments.</p>
         </a>
       </div>
     </section>
 
-    <!-- Collection section -->
+    <!-- Collection / Conclusion -->
     <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        DigitalPay.Creditcard is one spoke in <strong>The CreditCard Collection</strong> by ronarn AS. Each site explores a distinct piece of the payment stack and connects you to tools for comparing real cards and features.  
+        DigitalPay.Creditcard is part of <strong>The CreditCard Collection</strong> — a network of focused microsites by ronarn AS. Each site explains one aspect of credit-card usage or payment technology in plain language and then connects you to structured comparison tools.
       </p>
       <p class="small">
-        We do not issue cards, store tokens or process payments. We summarise public documentation and design trade-offs to help you understand how digital payments work under the hood.  
+        We do not issue cards, wallets or payment services. Instead, we summarise how the technology works so you can make more informed decisions when comparing real products and reading issuer documentation.
       </p>
       <p class="small">
-        This is not financial, legal or security advice. Payment flows and tokenisation details vary by issuer and region — always verify with your card provider and wallet vendor before relying on digital-only setups.  
+        Nothing on this site is financial advice, legal advice or a recommendation to use a particular product or provider. Always check current terms, fees and eligibility criteria with the issuer before applying.
       </p>
 
-      <!-- REQUIRED HUB SNIPPET: Technology hub -->
-      <div class="hub-link">
-        <a href="https://choose.creditcard/technology/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-           class="text-sm text-slate-600 hover:text-slate-900">
-          Learn more at the Technology hub
+      <!-- Technology hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        This microsite is connected to the
+        <a href="https://choose.creditcard/technology/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=hub_technology"
+           class="font-medium hover:text-slate-200">
+          Technology &amp; Payments hub
         </a>
-      </div>
+        on <a href="https://choose.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=hub_root" class="font-medium hover:text-slate-200">Choose.Creditcard</a>.
+        Educational only – not an endorsement of any issuer, wallet or network.
+      </p>
     </section>
 
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Ready to Explore Digital-First Card Options?</h2>
+      <h2>Ready to Compare Digital-First Cards?</h2>
       <p class="small">
-        Use DigitalPay.Creditcard to understand the mechanics and trade-offs of modern payment flows — then visit the main hub to find cards that support virtual cards, wallets and tokenised billing.  
+        Use DigitalPay.Creditcard to understand how digital payments work — then head over to the Technology hub on Choose.Creditcard to see how different issuers support wallets, virtual cards, tap-to-pay and security controls.
       </p>
-      <a class="cta" href="https://choose.creditcard/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Go to Choose.Creditcard
+      <a class="cta" href="https://choose.creditcard/technology/?utm_source=digitalpay.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Technology hub
       </a>
     </section>
-
   </main>
 
   <footer class="mini-footer">
     <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
-  <p class="mini-footer-contact"><a href="mailto:support@cc.creditcard">support@cc.creditcard</a></p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
   </footer>
 </body>
 </html>
+```0
